@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
-import Main from './components/layout/Main.js'
-import Sponsorship from './components/layout/Sponsorship';
-import NavBar from './components/layout/NavBar';
+import Main from './components/pages/Main.js'
+import Sponsorship from './components/pages/Sponsorship';
+import NavBar from './components/pages/NavBar';
 
 
 
