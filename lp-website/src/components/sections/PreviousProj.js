@@ -1,66 +1,22 @@
-import Card from './Card';
-import classes from './ProjectItem.module.css';
-import ProjectList from './ProjectList';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import { Button } from '@mui/material';
-import { IconButton } from '@mui/material';
+import './Slider.css';
+import ProjectSlider from './ProjectSlider';
+import { SliderData } from './SliderData';
 
-const DUMMY_DATA = [
-    {
-        id: 'm1',
-        title: 'E-Plan with Dart and Firebase',
-        image:
-          'https://i.imgur.com/1arjnNv.jpg',
-        address: 'Created during Fall 2021 of LaunchPad Purdue',
-        description:
-          'This app is a planner app that allows you to keep track of your progress and goals you have set. UI used with Dart is Flutter.',
-      },
-      {
-        id: 'm1',
-        title: 'E-Plan with Dart and Firebase',
-        image:
-          'https://i.imgur.com/1arjnNv.jpg',
-        address: 'Created during Fall 2021 of LaunchPad Purdue',
-        description:
-          'This app is a planner app that allows you to keep track of your progress and goals you have set. UI used with Dart is Flutter.',
-      },
-      {
-        id: 'm1',
-        title: 'E-Plan with Dart and Firebase',
-        image:
-          'https://i.imgur.com/1arjnNv.jpg',
-        address: 'Created during Fall 2021 of LaunchPad Purdue',
-        description:
-          'This app is a planner app that allows you to keep track of your progress and goals you have set. UI used with Dart is Flutter.',
-      },
-];
+
 
 function PreviousProj() {
+
     return (
-        <div>
-            <center><h1>Previous projects</h1></center>
-            <center><h3>Fall 2022</h3></center>
+    <><div>
+      <center>
+        <h1>Previous Projects</h1>
+      </center>
+      <center>
+        <h3>Fall 2021</h3>
+      </center>
+      </div><ProjectSlider slides={SliderData} /></>
+    )
 
-            <div className={classes.container}>
-              <IconButton color="primary" aria-label="previous">
-                <ArrowBackIosNewIcon />
-              </IconButton>
-  
-            
-              <div className = {classes.row}>
-                <ProjectList projects={DUMMY_DATA} />
-              </div>
-
-              <IconButton color="primary" aria-label="next">
-                <ArrowForwardIosIcon />
-              </IconButton>
-            </div>
-
-            
-
-        </div>
-    );
   }
   
   export default PreviousProj;
