@@ -1,0 +1,15 @@
+td {
+  height: 80px;
+  width: 250px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.circle {
+    border-radius: 50%;
+}
