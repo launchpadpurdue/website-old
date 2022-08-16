@@ -1,6 +1,7 @@
 td {
   height: 80px;
   width: 250px;
+  min-width: 200px;
   vertical-align: top;
   text-align: center;
 }

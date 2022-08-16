@@ -3,7 +3,8 @@ import "./TeamTable.css"
 function MeetTheTeam() {
     return (
         <div>
-            <h1>Meet our team!</h1>
+            <center>
+                <h1>Meet our team!</h1>
                 <div className="image-table">
                     <table className="center">
                         <tr>
@@ -72,6 +73,7 @@ function MeetTheTeam() {
                         </tr>
                     </table>
                 </div>
+            </center>
         </div>
     );
   }
