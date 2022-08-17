@@ -10,13 +10,15 @@ import NavBar from './components/pages/NavBar';
 function App() {
   return (
     <div>
+      
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path='/' exact element={<Main />} />
-          <Route path='/sponsorship' element={<Sponsorship />} />
+          <Route exact path='/' element={<Main />} />
+          <Route exact path='./components/pages/Sponsorship' element={<Sponsorship />} />
         </Routes>
       </Router>
+      <Sponsorship/>
     </div>
   );
 }
