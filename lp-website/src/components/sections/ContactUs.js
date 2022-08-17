@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import { Stack } from "@mui/system";
 import TextField from "@mui/material/TextField";
 
@@ -42,6 +42,10 @@ function ContactUs() {
             margin="normal"
             sx={{ height: "300" }}
           />
+          <br></br>
+          <Box component="span" justifyContent="right">
+            <Button variant="contained">Submit</Button>
+          </Box>
         </Grid>
         <Grid
           container

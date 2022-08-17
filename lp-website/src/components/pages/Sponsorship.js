@@ -1,5 +1,4 @@
 import Stack from "@mui/material/Stack";
-import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
 function Sponsorship() {
@@ -7,9 +6,7 @@ function Sponsorship() {
     <div>
       <Box sx={{ width: "100%", justifyContent: "center", marginLeft: "2%" }}>
         <Stack spacing={5}>
-          <Typography variant="h4" textAlign="left">
-            Big Thanks to our Sponsors!
-          </Typography>
+          <h2 textAlign="left">Big Thanks to our Sponsors!</h2>
 
           <Stack
             direction={{ xs: "column", sm: "row" }}
@@ -36,9 +33,9 @@ function Sponsorship() {
             ></img>
           </Stack>
 
-          <Typography variant="h4">Want to Sponsor Us?</Typography>
+          <h2>Want to Sponsor Us?</h2>
 
-          <Typography variant="h5" justifyContent="left">
+          <h3 justifyContent="left">
             <Box width={"60%"} marginLeft="3%">
               Toe wrestling is similar to arm wrestling. To play, players must
               take off their shoes and socks as the game is played with bare
@@ -47,7 +44,7 @@ function Sponsorship() {
               first with the right foot, then left, and right again if necessary
               [please replace with actual content].
             </Box>
-          </Typography>
+          </h3>
         </Stack>
       </Box>
     </div>
