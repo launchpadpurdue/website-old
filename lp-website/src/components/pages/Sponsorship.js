@@ -4,13 +4,17 @@ import { Box } from "@mui/system";
 function Sponsorship() {
   return (
     <div>
-      <Box sx={{ width: "100%", justifyContent: "center", marginLeft: "2%" }}>
+      <Box
+        sx={{ width: "100%", justifyContent: "center" }}
+        marginLeft={{ xs: "2%", sm: "1% " }}
+      >
         <Stack spacing={5}>
           <h2 textAlign="left">Big Thanks to our Sponsors!</h2>
 
           <Stack
             direction={{ xs: "column", sm: "row" }}
             justifyContent="space-around"
+            alignItems={"center"}
           >
             <img
               src="https://vignette.wikia.nocookie.net/fictionalcompanies/images/b/b3/DunderMifflinLogo.jpg/revision/latest?cb=20130917132424"
@@ -36,7 +40,13 @@ function Sponsorship() {
           <h2>Want to Sponsor Us?</h2>
 
           <h3 justifyContent="left">
-            <Box width={"60%"} marginLeft="3%">
+            <Box
+              width={"60%"}
+              sx={{
+                width: "75%",
+              }}
+              marginLeft="1.5%"
+            >
               Toe wrestling is similar to arm wrestling. To play, players must
               take off their shoes and socks as the game is played with bare
               feet. Players must link toes and each player's foot must touch

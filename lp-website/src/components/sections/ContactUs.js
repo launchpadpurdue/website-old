@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 
 function ContactUs() {
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%" }} marginLeft={{ xs: "2%", sm: "0% " }}>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={4}>
         <Grid
           container
@@ -12,7 +12,7 @@ function ContactUs() {
           direction="column"
           marginLeft="1%"
           sx={{
-            width: "50%",
+            width: "70%",
           }}
         >
           <br></br>
@@ -40,10 +40,11 @@ function ContactUs() {
             label="Message"
             variant="filled"
             margin="normal"
-            sx={{ height: "300" }}
+            multiline
+            rows={4}
           />
           <br></br>
-          <Box component="span" justifyContent="right">
+          <Box alignSelf={"end"}>
             <Button variant="contained">Submit</Button>
           </Box>
         </Grid>
@@ -52,7 +53,7 @@ function ContactUs() {
           spacing={0}
           direction="column"
           sx={{
-            width: "48%",
+            width: "67.5%",
           }}
         >
           <h1>Frequently Asked Questions</h1>
